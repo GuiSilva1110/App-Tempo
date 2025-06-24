@@ -5,7 +5,7 @@ const weatherBox = document.querySelector('.weather-box');
 const weatherDetails = document.querySelector('.weather-details');
 const error404 = document.querySelector('.not-found');
 
-const APIKey = 'd97ef243639beee2d34552175de0bc24';
+const APIKey = ' CHAVE DA API ';
 
 function searchWeather() {
     const city = input.value.trim();
