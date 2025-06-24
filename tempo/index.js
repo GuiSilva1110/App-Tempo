@@ -11,7 +11,7 @@ function searchWeather() {
     const city = input.value.trim();
 
     if (city === '') {
-        alert('Por favor, insira uma localização.');
+        alert('Insira uma localização.');
         return;
     }
 
@@ -70,14 +70,12 @@ function searchWeather() {
             container.style.height = '590px';
         })
         .catch(() => {
-            alert('Erro ao buscar dados. Verifique sua conexão.');
+            alert('Verifique sua conexão.');
         });
 }
 
-// Clique no botão
 searchBtn.addEventListener('click', searchWeather);
 
-// Pressionar Enter
 input.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
         searchWeather();
